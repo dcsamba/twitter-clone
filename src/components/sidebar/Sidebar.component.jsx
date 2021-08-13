@@ -2,7 +2,6 @@ import React from 'react'
 import TwitterIcon from '@material-ui/icons/Twitter';
 import SidebarOption from '../sidebar-option/Sidebar-option.component'
 import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone';
-import ExploreIcon from '@material-ui/icons/Explore';
 import HomeIcon from '@material-ui/icons/Home';
 import SearchIcon from '@material-ui/icons/Search';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
@@ -16,9 +15,9 @@ import './Sidebar.style.css'
 
 const Sidebar = () => {
     return (
-        <div>
+        <div className="sidebar">
             {/* Logo Twitter */}
-            <TwitterIcon />
+            <TwitterIcon className="twitter-logo" />
 
             {/* Option Menu */}
             <SidebarOption active Icon={HomeIcon} text="Accueil" />

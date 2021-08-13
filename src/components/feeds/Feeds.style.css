@@ -1,0 +1,15 @@
+.feeds {
+    flex: 0.4;
+    border-right: 1px solid rgb(197, 197, 197);
+    /* min-width: fit-content; La taille minimale s'adptera à son contenu */
+    overflow-y: scroll; /* Autoriser le scroll */
+}
+
+.feed-header {
+    padding: 10px 0px 10px 10px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100; /* Mettre toujours en haut peu importe */
+    border-bottom: 1px solid rgb(197, 197, 197);
+}
