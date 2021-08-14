@@ -5,6 +5,17 @@
     overflow-y: scroll; /* Autoriser le scroll */
 }
 
+/* Cacher la bar de scroll pour Chrome, Safari et Opera*/
+.feeds::-webkit-scrollbar {
+    display: none;
+}
+
+/* Cacher la bar de scroll pour IE, Edge et Firefox */
+.feeds {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 .feed-header {
     padding: 10px 0px 10px 10px;
     position: sticky;
@@ -12,4 +23,9 @@
     background-color: white;
     z-index: 100; /* Mettre toujours en haut peu importe */
     border-bottom: 1px solid rgb(197, 197, 197);
+}
+
+.feed-header > h2 {
+    font-size: 20px;
+    font-weight: 800;
 }

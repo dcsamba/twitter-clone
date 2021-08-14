@@ -10,10 +10,8 @@ function App() {
       {/* Sidebar */}
       <Sidebar />
 
-
       {/* Feeds */}
       <Feeds />
-
 
       {/* Widgets */}
       <Widgets />
